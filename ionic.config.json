@@ -1,0 +1,7 @@
+{
+  "name": "DishMaker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
