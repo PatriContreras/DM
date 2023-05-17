@@ -1,0 +1,260 @@
+:root {
+  /** Colores **/
+  --primary-btn-color: #00875e;
+  --secondary-btn-color: #b3544f;
+  --terciary-btn-color: #f7bd2a;
+  --white-color: #fff;
+
+
+
+  /** Escala de Grises **/
+  --grey-color: #666666;
+  --grey-color-rgb: 102, 102, 102;
+  --grey-color-second: #eae9e9;
+  --grey-color-second-rgb: 234, 233, 233;
+  --grey-color-third: #ffffff;
+  --grey-color-third-rgb: 231, 235, 237;
+  --grey-color-fourth: #e7ebed;
+  --grey-color-fourth-rgb: 204, 207, 210;
+  --grey-color-fifth: #cccfd2;
+  --grey-color-fifth-rgb: 255, 255, 255;
+
+  /** Estados **/
+  --success-color: #008c47;
+  --success-color-rgb: 0, 140, 71;
+  --sucess-color-background: #dce5c1;
+  --sucess-color-background-rgb: 220, 229, 193;
+  --error-color: #da2a2a;
+  --error-color-rgb: 218, 42, 42;
+  --error-color-background: #f6caca;
+  --error-color-background-rgb: 246, 202, 202;
+  --error-color-label: #faf0f2;
+  --error-color-label-rgb: 250, 240, 242;
+  --error-color-informative: #0d82bd;
+  --error-color-informative-rgb: 13, 130, 189;
+  --error-color-informative-background: #b7daec;
+  --error-color-informative-background-rgb: 183, 218, 236;
+  --notice-color: #e46b15;
+  --notice-color-rgb: 228, 107, 21;
+  --notice-color-background: #fff4ec;
+  --notice-color-background-rgb: 255, 244, 236;
+  --disable-color: #d2d4cf;
+  --disable-color-rgb: 210, 212, 207;
+
+  /** Customer **/
+  --customer-gold: #ac9316;
+  --customer-gold-rgb: 172, 147, 22;
+  --customer-platinium: #7994a4;
+  --customer-platinium-rgb: 121, 148, 164;
+  --customer-silver: #949494;
+  --customer-silver-rgb: 148, 148, 148;
+
+  /** Paddings Internos**/
+  --padding-internal-4: 4px;
+  --padding-internal-8: 8px;
+  --padding-internal-16: 16px;
+  --padding-internal-24: 24px;
+  --padding-internal-32: 32px;
+
+  /** Paddings Entre Componentes **/
+  --padding-between-internal-16: 16px;
+  --padding-between-internal-24: 24px;
+  --padding-between-internal-32: 32px;
+  --padding-between-internal-40: 40px;
+  --padding-between-internal-48: 48px;
+  --padding-between-internal-56: 56px;
+
+  /** Border Radios **/
+  --border-radius-6: 6px;
+  --border-radius-8: 8px;
+
+  /** Style-border-size **/
+  --border-size-secondary-button: 1px;
+
+  /**Tamaños de las Fuentes **/
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+  --font-size-56: 56px;
+  --font-size-64: 64px;
+  --font-size-72: 72px;
+
+  //** Fonts ***/
+  --font-family: "DM Sans";
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-line-height-18: 18px;
+  --font-line-height-20: 20px;
+  --font-line-height-21: 21px;
+  --font-line-height-28: 28px;
+  --font-line-height-32: 32px;
+  --font-line-height-36: 36px;
+  --font-line-height-40: 40px;
+  --font-line-height-48: 48px;
+  --font-line-height-64: 64px;
+  --font-line-height-72: 72px;
+  --font-line-height-96: 96px;
+  --font-line-height-100: 100px;
+  --font-line-height-100x100: 100%;
+
+  /** Buttons **/
+  --large-button: 56px;
+  --small-button: 40px;
+
+  /** Icons **/
+  --icon-size-small: 24px;
+  --icon-size-medium: 32px;
+  --icon-size-large: 64px;
+
+  /** TIPOGRAFÍAS **/
+  /** Titles: **/
+  /** Size 01 **/
+  --titles-size01-font-family: "DM Sans";
+  --titles-size01-font-weight: 400;
+  --titles-size01-font-size: 72px;
+  --titles-size01-line-height: 96px;
+  /** Size 02 **/
+  --titles-size02-font-family: "DM Sans";
+  --titles-size02-font-weight: 400;
+  --titles-size02-font-size: 64px;
+  --titles-size02-line-height: 72px;
+  /** Size 03 **/
+  --titles-size03-font-family: "DM Sans";
+  --titles-size03-font-weight: 400;
+  --titles-size03-font-size: 56px;
+  --titles-size03-line-height: 72px;
+  /** Size 04 **/
+  --titles-size04-font-family: "DM Sans";
+  --titles-size04-font-weight: 400;
+  --titles-size04-font-size: 40px;
+  --titles-size04-line-height: 64px;
+  /** Size 05 **/
+  --titles-size05-font-family: "DM Sans";
+  --titles-size05-font-weight: 400;
+  --titles-size05-font-size: 36px;
+  --titles-size05-line-height: 48px;
+  /** Size 06 **/
+  --titles-size06-font-family: "DM Sans";
+  --titles-size06-font-weight: 400;
+  --titles-size06-font-size: 32px;
+  --titles-size06-line-height: 40px;
+  /** Size 06 Medium **/
+  --titles-size06medium-font-family: "DM Sans";
+  --titles-size06medium-font-weight: 500;
+  --titles-size06medium-font-size: 32px;
+  --titles-size06medium-line-height: 40px;
+  /** Size 07 **/
+  --titles-size07-font-family: "DM Sans";
+  --titles-size07-font-weight: 400;
+  --titles-size07-font-size: 28px;
+  --titles-size07-line-height: 36px;
+  /** Size 07 Medium **/
+  --titles-size07medium-font-family: "DM Sans";
+  --titles-size07medium-font-weight: 500;
+  --titles-size07medium-font-size: 28px;
+  --titles-size07medium-line-height: 36px;
+  /** Size 08 **/
+  --titles-size08-font-family: "DM Sans";
+  --titles-size08-font-weight: 400;
+  --titles-size08-font-size: 24px;
+  --titles-size08-line-height: 32px;
+  /** Size 08 Medium **/
+  --titles-size08medium-font-family: "DM Sans";
+  --titles-size08medium-font-weight: 500;
+  --titles-size08medium-font-size: 24px;
+  --titles-size08medium-line-height: 32px;
+  /** Size 09 **/
+  --titles-size09-font-family: "DM Sans";
+  --titles-size09-font-weight: 400;
+  --titles-size09-font-size: 20px;
+  --titles-size09-line-height: 28px;
+  /** Size 09 Medium **/
+  --titles-size09medium-font-family: "DM Sans";
+  --titles-size09medium-font-weight: 500;
+  --titles-size09medium-font-size: 20px;
+  --titles-size09medium-line-height: 28px;
+  /** Size 10 **/
+  --titles-size10-font-family: "DM Sans";
+  --titles-size10-font-weight: 400;
+  --titles-size10-font-size: 16px;
+  --titles-size10-line-height: 100%;
+  /** Size 10 Medium **/
+  --titles-size10medium-font-family: "DM Sans";
+  --titles-size10medium-font-weight: 500;
+  --titles-size10medium-font-size: 16px;
+  --titles-size10medium-line-height: 100%;
+
+  /** Paragraph: **/
+  /** Paragraph Regular **/
+  --paragraph-regular-font-family: "DM Sans";
+  --paragraph-regular-font-weight: 400;
+  --paragraph-regular-font-size: 16px;
+  --paragraph-regular-line-height: 100%;
+  /** Paragrap Medium **/
+  --paragraph-medium-font-family: "DM Sans";
+  --paragraph-medium-font-weight: 500;
+  --paragraph-medium-font-size: 16px;
+  --paragraph-medium-line-height: 100%;
+  /** Paragrap Bold **/
+  --paragraph-bold-font-family: "DM Sans";
+  --paragraph-bold-font-weight: 700;
+  --paragraph-bold-font-size: 16px;
+  --paragraph-bold-line-height: 100%;
+
+  /** Caption: **/
+  /** Caption M Up **/
+  --caption-m-up-font-family: "DM Sans";
+  --caption-m-up-font-weight: 400;
+  --caption-m-up-font-size: 14px;
+  --caption-m-up-line-height: 100%;
+  /** Caption M Low **/
+  --caption-m-low-font-family: "DM Sans";
+  --caption-m-low-font-weight: 400;
+  --caption-m-low-font-size: 14px;
+  --caption-m-low-line-height: 100%;
+  /** Caption S Up **/
+  --caption-s-up-font-family: "DM Sans";
+  --caption-s-up-font-weight: 400;
+  --caption-s-up-font-size: 12px;
+  --caption-s-up-line-height: 100%;
+
+  /** CTA: **/
+  /** CTA Regular **/
+  --cta-regular-font-family: "DM Sans";
+  --cta-regular-font-weight: 400;
+  --cta-regular-font-size: 16px;
+  --cta-regular-line-height: 24px;
+  /** CTA medium **/
+  --cta-medium-font-family: "DM Sans";
+  --cta-medium-font-weight: 500;
+  --cta-medium-font-size: 16px;
+  --cta-medium-line-height: 24px;
+  /** CTA bold **/
+  --cta-bold-font-family: "DM Sans";
+  --cta-bold-font-weight: 700;
+  --cta-bold-font-size: 16px;
+  --cta-bold-line-height: 24px;
+
+  /** Acelerators: **/
+  /** Acelerators Regular **/
+  --acelerators-regular-font-family: "DM Sans";
+  --acelerators-regular-font-weight: 400;
+  --acelerators-regular-font-size: 14px;
+  --acelerators-regular-line-height: 24px;
+  /** Acelerators Medium **/
+  --acelerators-medium-font-family: "DM Sans";
+  --acelerators-medium-font-weight: 500;
+  --acelerators-medium-font-size: 14px;
+  --acelerators-medium-line-height: 24px;
+  /** Acelerators Bold **/
+  --acelerators-bold-font-family: "DM Sans";
+  --acelerators-bold-font-weight: 700;
+  --acelerators-bold-font-size: 14px;
+  --acelerators-bold-line-height: 24px;
+}

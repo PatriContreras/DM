@@ -1,0 +1,179 @@
+@mixin title-size-01() {
+  font-family: var(--titles-size01-font-family);
+  font-weight: var(--titles-size01-font-weight);
+  font-size: var(--titles-size01-font-size);
+  line-height: var(--titles-size01-line-height);
+  color: var(-secondary-color);
+}
+
+@mixin title-size-02() {
+  font-family: var(--titles-size02-font-family);
+  font-weight: var(--titles-size02-font-weight);
+  font-size: var(--titles-size02-font-size);
+  line-height: var(--titles-size02-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-03() {
+  font-family: var(--titles-size03-font-family);
+  font-weight: var(--titles-size03-font-weight);
+  font-size: var(--titles-size03-font-size);
+  line-height: var(--titles-size03-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-04() {
+  font-family: var(--titles-size04-font-family);
+  font-weight: var(--titles-size04-font-weight);
+  font-size: var(--titles-size04-font-size);
+  line-height: var(--titles-size04-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-05() {
+  font-family: var(--titles-size05-font-family);
+  font-weight: var(--titles-size05-font-weight);
+  font-size: var(--titles-size05-font-size);
+  line-height: var(--titles-size05-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-06() {
+  font-family: var(--titles-size06-font-family);
+  font-weight: var(--titles-size06-font-weight);
+  font-size: var(--titles-size06-font-size);
+  line-height: var(--titles-size06-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-06-medium() {
+  font-family: var(--titles-size06medium-font-family);
+  font-weight: var(--titles-size06medium-font-weight);
+  font-size: var(--titles-size06medium-font-size);
+  line-height: var(--titles-size06medium-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-07() {
+  font-family: var(--titles-size07-font-family);
+  font-weight: var(--titles-size07-font-weight);
+  font-size: var(--titles-size07-font-size);
+  line-height: var(--titles-size07-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-07-medium() {
+  font-family: var(--titles-size07medium-font-family);
+  font-weight: var(--titles-size07medium-font-weight);
+  font-size: var(--titles-size07medium-font-size);
+  line-height: var(--titles-size07medium-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-08() {
+  font-family: var(--titles-size08-font-family);
+  font-weight: var(--titles-size08-font-weight);
+  font-size: var(--titles-size08-font-size);
+  line-height: var(--titles-size08-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-08-medium() {
+  font-family: var(--titles-size08medium-font-family);
+  font-weight: var(--titles-size08medium-font-weight);
+  font-size: var(--titles-size08medium-font-size);
+  line-height: var(--titles-size08medium-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-09() {
+  font-family: var(--titles-size09-font-family);
+  font-weight: var(--titles-size09-font-weight);
+  font-size: var(--titles-size09-font-size);
+  line-height: var(--titles-size09-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-09-medium() {
+  font-family: var(--titles-size09medium-font-family);
+  font-weight: var(--titles-size09medium-font-weight);
+  font-size: var(--titles-size09medium-font-size);
+  line-height: var(--titles-size09medium-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-10() {
+  font-family: var(--titles-size10-font-family);
+  font-weight: var(--titles-size10-font-weight);
+  font-size: var(--titles-size10-font-size);
+  line-height: var(--titles-size10-line-height);
+  color: var(--secondary-color);
+}
+
+@mixin title-size-10-medium() {
+  font-family: var(--titles-size10medium-font-family);
+  font-weight: var(--titles-size10medium-font-weight);
+  font-size: var(--titles-size10medium-font-size);
+  line-height: var(--titles-size10medium-line-height);
+  color: var(--secondary-color);
+}
+
+.title-size-01 {
+  @include title-size-01();
+}
+
+.title-size-02 {
+  @include title-size-02();
+}
+
+.title-size-03 {
+  @include title-size-03();
+}
+
+.title-size-04 {
+  @include title-size-04();
+}
+
+.title-size-05 {
+  @include title-size-05();
+}
+
+.title-size-06 {
+  @include title-size-06();
+}
+
+.title-size-06-medium {
+  @include title-size-06-medium();
+}
+
+.title-size-07 {
+  @include title-size-07();
+}
+
+.title-size-07-medium {
+  @include title-size-07-medium();
+}
+
+.title-size-08 {
+  @include title-size-08();
+}
+
+.title-size-08-medium {
+  @include title-size-08-medium();
+}
+
+.title-size-09 {
+  @include title-size-09();
+}
+
+.title-size-09-medium {
+  @include title-size-09-medium();
+}
+
+.title-size-10 {
+  @include title-size-10();
+}
+
+.title-size-10-medium {
+  @include title-size-10-medium();
+}

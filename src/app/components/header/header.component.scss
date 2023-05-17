@@ -1,0 +1,20 @@
+@use '../../scss/shared/titles' as *;
+
+ion-toolbar {
+  display: flex;
+  height: 80px;
+  --background: var(--primary-btn-color);
+  --color: var(--white-color);
+
+  // .toolbar-container {
+  //   padding: 20px !important;
+  // }
+
+  ion-title {
+    @include title-size-06-medium;
+  }
+
+  ion-img {
+    width: 60px;
+  }
+}
