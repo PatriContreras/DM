@@ -1,0 +1,11 @@
+@use '../../scss/shared/titles' as *;
+
+ion-toolbar {
+  --background: var(--primary-btn-color);
+  // opacity: .7;
+
+  ion-title {
+    @include title-size-10;
+    color: var(--white-color);
+  }
+}

@@ -6,10 +6,6 @@ ion-toolbar {
   --background: var(--primary-btn-color);
   --color: var(--white-color);
 
-  // .toolbar-container {
-  //   padding: 20px !important;
-  // }
-
   ion-title {
     @include title-size-06-medium;
   }
