@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private translate: TranslateService){}
+
+ handleChange = ($event: any) => {
+  this.translate.use($event.detail.value);
+}
 }

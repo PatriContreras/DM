@@ -2,6 +2,16 @@
   <ion-toolbar class="ion-padding-horizontal">
     <ion-img src="../../../assets/img/DishMaker_allpic.png"
       alt="The Wisconsin State Capitol building in Madison, WI at night" slot="start" routerLink="/home"></ion-img>
-    <ion-title slot="end"> Shake&Menu </ion-title>
+    <ion-title> Shake&Menu </ion-title>
+    <ion-list slot="end">
+      <ion-item>
+        <ion-select aria-label="Select language" interface="popover" placeholder="Select language"
+          (ionChange)="handleChange($event)">
+          <ion-select-option value="es">ES</ion-select-option>
+          <ion-select-option value="en">EN</ion-select-option>
+          <ion-select-option value="fr">FR</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
