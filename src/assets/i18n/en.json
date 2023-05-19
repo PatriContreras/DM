@@ -1,7 +1,20 @@
 {
+  "common": {
+    "saveBtn": "Save"
+  },
   "home": {
     "btn1": "Create menu",
     "btn2": "New dish",
     "btn3": "Other options"
+  },
+  "new": {
+    "ph-1": "Dish name",
+    "ph-2": "Add ingredient",
+    "opc1": "Breakfast",
+    "opc2": "Morning snack",
+    "opc3": "Lunch",
+    "opc4": "Afternoon snack",
+    "opc5": "Dinner",
+    "schedule": "Schedule"
   }
 }

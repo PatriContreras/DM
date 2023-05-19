@@ -1,7 +1,20 @@
 {
+  "common": {
+    "saveBtn": "Guardar"
+  },
   "home": {
     "btn1": "Crear menú",
     "btn2": "Nuevo plato",
     "btn3": "Otras opciones"
+  },
+  "new": {
+    "ph-1": "Nombre del plato",
+    "ph-2": "Añadir ingrediente",
+    "opc1": "Desayuno",
+    "opc2": "Almuerzo",
+    "opc3": "Comida",
+    "opc4": "Merienda",
+    "opc5": "Cena",
+    "schedule": "Horario"
   }
 }

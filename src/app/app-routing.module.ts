@@ -11,11 +11,16 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  // {
+  //   path: '**',
+  //   redirectTo: 'home',
+  //   pathMatch: 'full'
+  // },
   {
-    path: '**',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'new',
+    loadChildren: () => import('./pages/new-dish/new-dish.module').then( m => m.NewDishPageModule)
   },
+
 ];
 
 @NgModule({

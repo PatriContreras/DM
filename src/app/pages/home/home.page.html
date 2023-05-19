@@ -1,8 +1,11 @@
 <ion-content [fullscreen]="true" class="ion-padding">
   <div class="main">
-    <ion-button expand="block" fill="outline" class="primary-btn">{{'home.btn1' | translate}}</ion-button>
-    <ion-button expand="block" fill="outline" class="secondary-btn">{{'home.btn2' | translate}}</ion-button>
-    <ion-button expand="block" fill="outline" class="terciary-btn">{{'home.btn3' | translate}}</ion-button>
+    <ion-button expand="block" fill="outline" class="primary-btn" (click)="navigateTo('menu')">{{'home.btn1' |
+      translate}}</ion-button>
+    <ion-button expand="block" fill="outline" class="secondary-btn" (click)="navigateTo('dish')">{{'home.btn2' |
+      translate}}</ion-button>
+    <ion-button expand="block" fill="outline" class="terciary-btn" (click)="navigateTo('option')">{{'home.btn3' |
+      translate}}</ion-button>
   </div>
 
 </ion-content>

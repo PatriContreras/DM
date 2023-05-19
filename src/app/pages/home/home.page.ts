@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router: Router) { }
+
+  navigateTo(btnName: string) {
+    switch (btnName) {
+      case 'menu':
+        this.router.navigate(['/']);
+        break;
+      case 'dish':
+        console.log('navigate')
+        this.router.navigate(['/new']);
+        break;
+      case 'option':
+        this.router.navigate(['/']);
+        break;
+    }
+  }
 
 }
