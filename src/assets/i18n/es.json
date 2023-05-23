@@ -15,6 +15,12 @@
     "opc3": "Comida",
     "opc4": "Merienda",
     "opc5": "Cena",
-    "schedule": "Horario"
+    "schedule": "Horario",
+    "titleList": "Lista de ingredientes",
+    "alert": {
+      "message": "Se ha guardado el plato correctamente",
+      "btn1": "Añadir otro plato",
+      "btn2": "Salir"
+    }
   }
 }

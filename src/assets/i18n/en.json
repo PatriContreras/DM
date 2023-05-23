@@ -15,6 +15,12 @@
     "opc3": "Lunch",
     "opc4": "Afternoon snack",
     "opc5": "Dinner",
-    "schedule": "Schedule"
+    "schedule": "Schedule",
+    "titleList": "Ingredients",
+    "alert": {
+      "message": "Saved successfully!",
+      "btn1": "Add new",
+      "btn2": "Exit"
+    }
   }
 }
