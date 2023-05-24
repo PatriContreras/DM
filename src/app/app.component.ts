@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,8 +8,13 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(public translate: TranslateService) {
-    // translate.setDefaultLang('es');
-    // translate.addLangs(['en', 'es']);
+  showElement: boolean = true;
+
+  constructor(private _router: Router, private _activatedRoute: ActivatedRoute) {
+    this._router.events.subscribe(event => {
+      if(event instanceof NavigationEnd && event.url === '/') {
+        this.showElement = false
+      }
+    })
   }
 }

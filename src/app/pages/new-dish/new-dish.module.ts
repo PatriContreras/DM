@@ -18,6 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
     TranslateModule,
     ReactiveFormsModule
   ],
-  declarations: [NewDishPage]
+  declarations: [NewDishPage],
+  exports: [NewDishPage]
 })
 export class NewDishPageModule {}

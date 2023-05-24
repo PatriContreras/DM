@@ -41,7 +41,8 @@ p {
 }
 
 ion-title,
-ion-select {
+ion-select,
+figure {
   padding: 0;
 }
 
@@ -53,6 +54,7 @@ ion-input input {
 ion-button {
   --border-radius: 6px;
 }
+
 
 .primary-btn {
   --border-color: var(--primary-btn-color);

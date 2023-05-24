@@ -8,18 +8,17 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingPageModule)
   },
-  // {
-  //   path: '**',
-  //   redirectTo: 'home',
-  //   pathMatch: 'full'
-  // },
   {
     path: 'new',
     loadChildren: () => import('./pages/new-dish/new-dish.module').then( m => m.NewDishPageModule)
   },
+  {
+    path: 'landing',
+    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingPageModule)
+  },
+
 
 ];
 
