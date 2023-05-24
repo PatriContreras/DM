@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
@@ -10,28 +10,25 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./new-dish.page.scss'],
 })
 export class NewDishPage implements OnInit {
-  // public get alertCtrl(): AlertController {
-  //   return this._alertCtrl;
-  // }
-  // public set alertCtrl(value: AlertController) {
-  //   this._alertCtrl = value;
-  // }
+  @ViewChild('ingredientInput') input!: ElementRef;
 
   ingredientsList: string[] = [];
   form!: FormGroup<any>;
   btnCancel: string = '';
-  constructor(private _alertCtrl: AlertController, private router: Router, private _translate: TranslateService) { }
+
+  constructor(private _alertCtrl: AlertController, private _router: Router, private _translate: TranslateService) { }
 
   ngOnInit() {
     this.form = new FormGroup({
-      name: new FormControl(''),
-      schedule: new FormControl(''),
-      ingredient: new FormControl(''),
+      name: new FormControl('', Validators.required),
+      schedule: new FormControl('', Validators.required),
+      ingredient: new FormControl('', Validators.required),
     })
   }
 
   addIngredient() {
     this.ingredientsList.push(this.form.value.ingredient)
+    //TODO clear input when adding ingredient
   }
 
   deleteIngredient(ingredient: string) {
@@ -54,7 +51,7 @@ export class NewDishPage implements OnInit {
             this.btnCancel = 'new';
             this.form.reset();
             this.ingredientsList = [];
-            this.router.navigate(['/new'])
+            this._router.navigate(['/new'])
           }
         },
         {
@@ -63,7 +60,7 @@ export class NewDishPage implements OnInit {
             this.btnCancel = 'home';
             this.form.reset();
             this.ingredientsList = [];
-            this.router.navigate(['/home'])
+            this._router.navigate(['/home'])
           }
         }
       ]

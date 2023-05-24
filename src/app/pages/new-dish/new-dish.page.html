@@ -1,8 +1,10 @@
 <ion-content [fullscreen]="true" class="ion-padding content">
+  <!-- <ion-title class="ion-text-center content__title">Marchando nuevos platos!</ion-title> -->
   <div class="content__container">
+
     <form action="POST" [formGroup]="form" class="content__container__form">
 
-      <ion-input label="Outline input" labelPlacement="floating" fill="outline" shape="round"
+      <ion-input label="Outline input" label-placement="floating" fill="outline" shape="round"
         [placeholder]="'new.ph-1' | translate" formControlName="name"></ion-input>
 
 
@@ -17,7 +19,7 @@
       </ion-select>
 
       <div class="content__container__form__ingredients--input">
-        <ion-input label="Outline input" label-placement="floating" fill="outline"
+        <ion-input #ingredientInput label="Outline input" label-placement="floating" fill="outline"
           [placeholder]="'new.ph-2' | translate" formControlName="ingredient"></ion-input>
         <ion-icon name="add-circle-outline" aria-label="Boton para añadir ingrediente a la lista de ingredientes"
           (click)=" addIngredient()">

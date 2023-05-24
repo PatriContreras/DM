@@ -40,8 +40,14 @@ p {
   margin: 0;
 }
 
-ion-title {
+ion-title,
+ion-select {
   padding: 0;
+}
+
+ion-input input {
+  padding: 0 !important;
+
 }
 
 ion-button {

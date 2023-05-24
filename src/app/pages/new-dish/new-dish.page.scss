@@ -1,41 +1,48 @@
 @use '../../scss/shared/titles' as *;
 
 
-.content__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+.content {
+  &__title {
+    color: var(--terciary-btn-color);
+  }
 
-  &__form {
+  &__container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: space-between;
+    height: 100%;
 
-    &__ingredients {
-      &--input {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px 0;
 
-        ion-icon {
-          font-size: 30px;
-          color: var(--primary-btn-color);
+      &__ingredients {
+        &--input {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          ion-icon {
+            font-size: 30px;
+            color: var(--primary-btn-color);
+          }
         }
+
+        &--list {
+          ion-chip {
+            --background: var(--extra-color1);
+          }
+
+          ion-title {
+            margin-bottom: 20px;
+            @include title-size-09;
+          }
+        }
+
+
       }
-
-      &--list {
-        ion-chip {
-          --background: #f9c48c;
-          // --color: #f064d;
-        }
-
-        ion-title {
-          @include title-size-09;
-        }
-      }
-
-
     }
   }
 }
