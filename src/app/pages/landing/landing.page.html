@@ -1,8 +1,8 @@
-<ion-content class="ion-padding">
+<ion-content>
   <div class="content">
     <div class="content__logo">
       <figure>
-        <ion-img src="../../../assets/img/smgreen.png" class="content__img"></ion-img>
+        <ion-img src="../../../assets/img/DishMaker_allpic.png" class="content__img"></ion-img>
       </figure>
       <div class="content__logo__text">
         <ion-title class="content__logo__text__title">Shake & Menu</ion-title>
@@ -11,11 +11,45 @@
     </div>
 
     <div class="content__form">
-      <form action="">
-        <!-- <ion-input label="Outline input" label-placement="floating" fill="outline" shape="round"
-          [placeholder]="'new.ph-1' | translate" formControlName="name"></ion-input> -->
-
+      <form [formGroup]="loginForm">
+        <ion-grid>
+          <ion-row align-items-end>
+            <ion-col size="1" align-self-center>
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-label position="floating">Usuario</ion-label>
+              <ion-input [placeholder]="'new.ph-1' | translate" formControlName="user"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row align-items-end>
+            <ion-col size="1" align-self-center>
+              <ion-icon name="mail-outline"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input [placeholder]="'new.ph-1' | translate" formControlName="email"></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </form>
+
+      <ion-button expand="block" fill="outline" class="terciary-btn content__form__btn"
+        (click)="submit()">Acceder</ion-button>
+
+      <!-- <ion-grid>
+        <ion-row align-items-end>
+          <ion-col size="1" align-self-center>
+
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Floating Label</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid> -->
     </div>
   </div>
 

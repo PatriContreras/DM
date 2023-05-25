@@ -1,3 +1,11 @@
+@mixin landing-title() {
+  font-family: var(--landing-title-font-family);
+  font-weight: var(--landing-title-font-weight);
+  font-size: var(--landing-title-font-size);
+  line-height: var(--landing-title-line-height);
+  color: var(-secondary-color);
+}
+
 @mixin title-size-01() {
   font-family: var(--titles-size01-font-family);
   font-weight: var(--titles-size01-font-weight);
@@ -116,6 +124,10 @@
   font-size: var(--titles-size10medium-font-size);
   line-height: var(--titles-size10medium-line-height);
   color: var(--secondary-color);
+}
+
+.landing-title {
+  @include landing-title();
 }
 
 .title-size-01 {

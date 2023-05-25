@@ -12,6 +12,7 @@ export class AppComponent {
 
   constructor(private _router: Router, private _activatedRoute: ActivatedRoute) {
     this._router.events.subscribe(event => {
+
       if(event instanceof NavigationEnd && event.url === '/') {
         this.showElement = false
       }

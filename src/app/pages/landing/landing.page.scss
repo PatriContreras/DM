@@ -1,14 +1,21 @@
+@use "../../scss/shared/titles" as *;
+
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: var(--primary-btn-color);
+  height: 100%;
+  padding: 80px 0px;
 
   &__logo {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 
     ion-img {
-      height: 200px;
+      height: 100px;
     }
 
     &__text {
@@ -17,6 +24,35 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+
+      &__title {
+        @include landing-title;
+        // --color: var(--primary-btn-color);
+        --color: white;
+      }
+
+      &__subtitle {
+        @include title-size-10;
+        color: var(--primary-btn-color);
+        --color: white;
+
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-btn-color);
+    gap: 50px;
+    color: white;
+
+    &__btn {
+      width: 80%;
+      --color: white;
+      --background: var(--terciary-btn-color);
     }
   }
 }
